@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(30deg, #0c0c0c,#0c0c0c,#0f0e0e, #242323,#323232);
+}
+
+#img-missile{
+    transform:rotate(70deg);
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    filter: blur(100px);
+    transition: 2s;
+}
+
+.characteristics{
+    position: relative;
+    top: 50px;
+    left: 950px;
+    transform: rotate(-20deg);
+    width: 300px;
+    filter: blur(100px);
+    transition: 2s;
+}
+
+.characteristic{
+    width: 300px;
+    height: 150px;
+    color: white;
+}
+
+.characteristic-title{
+    font-size: 20px;
+    text-align: center;
+}
+
+.characteristic-number{
+    width: 150;
+    height: 150;
+    text-align: left;
+    font-size: 50px;
+    border-left: 1px solid white;
+    padding: 10px;
+}
+
+/*Peças****************/
+.component{
+    opacity: 0.5;
+}
+
+.features{
+    position: relative;
+    bottom: 450px;
+    filter: blur(100px);
+    transition: 2s;
+}
+
+.piece{
+    display: inline-block;
+    position: relative;
+    transform: rotate(-20deg);
+    bottom: 500px;
+}
+
+.piece-title{
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.line{  
+    border-color: #b8acac;
+    width: 200px;
+}
+
+.line-pair{
+    width: 300px;
+}
+
+.control-counter{
+    width: 40px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.control-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/*sistema de mira*/
+.features .piece:nth-child(1){
+    left: 500px;
+    bottom: 50px;
+}
+
+/*irânio 235*/
+.features .piece:nth-child(2){
+    top: 80px;
+    left: 300px;
+}
+
+/*isótopos de Hidrogênio*/
+.features .piece:nth-child(3){
+    top: 200px;
+    left: 30px; 
+}
+
+/*explosivo químico*/
+.features .piece:nth-child(4){
+    top: 220px;
+    right: 135px;
+}
+
+/*detonador*/
+.features .piece:nth-child(5){
+    top: 300px;
+    right: 430px;
+}
+
+/*combustível*/
+.features .piece:nth-child(6){
+    top: 450px;
+    right: 555px;
+}
+
+/*foguete*/
+.features .piece:nth-child(7){
+    top: 560px;
+    right: 740px;
+}
+
+.launcher{
+    width: 110px;
+    height: 110px;   
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    top: 450px;
+    left: 1200px;
+}
+
+.launcher-button__test{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s; 
+    background: #0c0c0c;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.launcher-button__test:hover{
+    transform: scale(.95);
+    background: #302e2e;
+    transition: .5s;
+}
+
+.launcher-button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s; 
+    background: url(../img/biohazard.png)center;
+    background-size: cover;
+    position: absolute;
+    top: 470px;
+    left: 360px;
+    display: none; 
+    background-color: rgba(255, 0, 0, 0.637);
+}
+
+.launcher-button:active{
+    transform: scale(.90);
+    border: 2px solid whitesmoke;
+}
+
+.glass{
+    width: 110px;
+    height: 110px;   
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    top: 465px;
+    left: 355px;
+    background: #d4d4d453;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+
+
+
+/* tela de apresentacão */
+.dialogue{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    bottom: 100px;
+    left: 700px;
+    background: #0000008d;
+    border-radius: 10px;
+    color: whitesmoke;
+    transition: 2s;
+}
+
+#img-kim{
+    position: absolute;
+    width: 150px;
+    left: -150px;
+    top: 30px;
+    border: 10px solid black;
+}
+
+.lore{
+    padding: 25px;
+    padding-top: 50px;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.text{
+    font-size: 20px;
+    margin: 20px 0 0 30px;
+}
+
+#start-button{
+    position: absolute;
+    background: #131313;
+    color: white;
+    width: 100px;
+    height: 40px;
+    left: 380px;
+    bottom: 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: .5s;
+}
+
+#start-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .5s;
+    background: #302e2e;
+}
+
+.dialogue-kim{
+    display: none;
+}
+
+

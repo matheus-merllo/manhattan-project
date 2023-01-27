@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <!--<link rel="shortcut icon" href="img....">-->
+    <title>Manhattan</title>
+</head>
+<body>
+    
+    <main>
+        <img src="img/missile.png" alt="imagem missil" id="img-missile">
+        <section class="characteristics">
+            <div class="characteristic">
+                <div class="characteristic-title">
+                    <p>Radiação</p>
+                </div>
+                <div class="characteristic-value">
+                    <p class="characteristic-number" data-characteristic="radiation" id="radiation">0.0</p>
+                </div>
+            </div>
+            <div class="characteristic">
+                <div class="characteristic-title">
+                    <p>Energia Kton</p>
+                </div>
+                <div class="characteristic-value">
+                    <p class="characteristic-number" data-characteristic="energy" id="energy">1.5</p>
+                </div>
+            </div>
+            <div class="characteristic">
+                <div class="characteristic-title">
+                    <p>Velocidade Km/h</p>
+                </div>
+                <div class="characteristic-value">
+                    <p class="characteristic-number" data-characteristic="speed" id="speed">1200.0</p>
+                </div>
+            </div>
+            <div class="characteristic">
+                <div class="characteristic-title">
+                    <p>Alcance M</p>
+                </div>
+                <div class="characteristic-value">
+                    <p class="characteristic-number" data-characteristic="range" id="range">1750.0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="piece component">
+                <label for="" class="piece-title">Sistema de mira</label>
+                <hr class="line">
+            </div>
+            <div class="piece">
+                <label for="" class="piece-title">Urânio 235 kg</label>
+                <hr class="line">
+                <div class="control"></div>
+                    <button class="control-btn" data-operation="-" data-piece="uranium">-</button>
+                    <input type="text" class="control-counter" data-counter value="0">
+                    <button class="control-btn" data-operation="+" data-piece="uranium">+</button>
+                </div>
+            </div>
+            <div class="piece">
+                <label for="" class="piece-title">Isótopos de Hidrogênio kg</label>
+                <hr class="line line-pair">
+                <div class="control"></div>
+                    <button class="control-btn" data-operation="-" data-piece="isotope">-</button>
+                    <input type="text" class="control-counter" data-counter value="2">
+                    <button class="control-btn" data-operation="+" data-piece="isotope">+</button>
+                </div>
+            </div>
+            <div class="piece">
+                <label for="" class="piece-title">Explosivo químico kg</label>
+                <hr class="line"> 
+                <div class="control"></div>
+                    <button class="control-btn" data-operation="-" data-piece="explosive">-</button>
+                    <input type="text" class="control-counter" data-counter value="170">
+                    <button class="control-btn" data-operation="+" data-piece="explosive">+</button>
+                </div>
+            </div>
+            <div class="piece component">
+                <label for="" class="piece-title">Detonador</label>
+                <hr class="line line-pair">
+            </div>
+            <div class="piece">
+                <label for="" class="piece-title">Combustível L</label>
+                <hr class="line"> 
+                <div class="control"></div>
+                    <button class="control-btn" data-operation="-" data-piece="fuel">-</button>
+                    <input type="text" class="control-counter" data-counter value="500">
+                    <button class="control-btn" data-operation="+" data-piece="fuel">+</button>
+                </div>
+            </div>
+            <div class="piece component">
+                <label for="" class="piece-title">Foguete</label>
+                <hr class="line">
+            </div>
+            
+            <div class="launcher">
+                <button class="launcher-button__test">Testar</button>
+            </div>
+            
+        </section>
+
+        <section class="dialogue">
+            <div class="box">
+                <img src="/img/kim.webp" alt="Agente Kim" id="img-kim">
+                <div class="lore">
+                    <h2 class="name">kim kitsuragi</h2>
+                    <p class="text" data-text-one>Harrier, as notícias não são boas!</p>
+                    <p class="text" data-text-two>Nossos satélites confirmaram suas suspeitas. Destacamentos de Revachol invadiram nossas fronteiras e confirmamos o deslocamento de mais soldados para o fronte. Não temos notícias do nosso batalhão que patrulhava o leste da fronteira, a blitzkrieg certamente acabou com todos.</p>
+                    <p class="text" data-text-three>Eles confundiram nossa benevolência com fraqueza, devemos retaliar imediatamente de maneira severa.</p>
+                    <p class="text" data-text-four>As ordens são claras! Vamos desenvolver uma "tactical nuke" em tempo recorde. Usaremos a estrutura do nosso míssil 12B28, só precisamos de suas especificações para seguir com o lançamento. Se a detonarmos nos limites do nosso território, eles não terão justificativa para contra-atacar.</p>
+                    <button id="start-button">Ok</button>
+                    
+                    <button class="launcher-button"></button>
+                    <div class="glass"></div>
+                </div>
+            </div>
+
+            <audio src="audio/glass-open.wav" type="audio/wav" id="glass-audio"></audio>
+            <audio src="audio/bomb-launched.mp3" type="audio/mp3" id="launch-audio"></audio>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

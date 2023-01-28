@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <!--<link rel="shortcut icon" href="img....">-->
+    <link rel="shortcut icon" href="img/biohazard.png">
     <title>Manhattan</title>
 </head>
 <body>
-    
-    <main>
+    <video id="video">
+        <source src="video/explosion-video.mp4" type="video/mp4">
+    </video>
+    <main id="main">
         <img src="img/missile.png" alt="imagem missil" id="img-missile">
         <section class="characteristics">
             <div class="characteristic">
@@ -100,7 +102,6 @@
             <div class="launcher">
                 <button class="launcher-button__test">Testar</button>
             </div>
-            
         </section>
 
         <section class="dialogue">
@@ -118,9 +119,8 @@
                     <div class="glass"></div>
                 </div>
             </div>
-
-            <audio src="audio/glass-open.wav" type="audio/wav" id="glass-audio"></audio>
-            <audio src="audio/bomb-launched.mp3" type="audio/mp3" id="launch-audio"></audio>
+                <audio src="audio/glass-open.wav" type="audio/wav" id="glass-audio"></audio>
+                <audio src="audio/bomb-launched.mp3" type="audio/mp3" id="launch-audio"></audio>
         </section>
     </main>
 

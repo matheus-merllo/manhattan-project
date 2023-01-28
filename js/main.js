@@ -1,4 +1,4 @@
-
+const main = document.getElementById('main');
 const startButton = document.getElementById('start-button');
 const dialogue = document.querySelector('.dialogue');
 const features = document.querySelector('.features');
@@ -9,12 +9,9 @@ const text = document.querySelectorAll('.text');
 const textOne = document.querySelector('[data-text-one]');
 const textTwo = document.querySelector('[data-text-two]');
 
-/* const dialogueSuccess = document.querySelector('.dialogue-success').innerHTML; */
-
 const glass = document.querySelector('.glass');
 const launcherTest = document.querySelector('.launcher-button__test');
 const launcherButton = document.querySelector('.launcher-button');
-
 
 const buttons = document.querySelectorAll('[data-piece]');
 const characteristics = document.querySelectorAll('[data-characteristic]');
@@ -165,7 +162,25 @@ function final(){
     })
     launcherButton.addEventListener('click', () => {
         const launchAudio = document.getElementById('launch-audio');
+        launchAudio.volume = '0.3';
         launchAudio.play();
+        goodbye();
+        setTimeout(playVideo, 5000);
     })
 }
 
+function playVideo(){
+    const video = document.getElementById('video');
+    video.volume = '1';
+    video.style.display = 'block';
+    glass.style.display = 'none';
+    video.play();
+}
+
+function goodbye(){
+    main.style.opacity = '0';
+    main.style.transition = '3s';
+    setTimeout(()=>{
+        window.location.reload(true);
+    }, 8500);
+}

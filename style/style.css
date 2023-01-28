@@ -207,8 +207,6 @@ body{
     display: none;
 }
 
-
-
 /* tela de apresentacão */
 .dialogue{
     position: absolute;
@@ -268,4 +266,9 @@ body{
     display: none;
 }
 
-
+#video{
+    position: absolute;
+    width: 1920px;
+    height: 900px;
+    display: none;
+}

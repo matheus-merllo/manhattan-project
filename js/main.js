@@ -1,4 +1,4 @@
-const main = document.getElementById('main');
+
 const startButton = document.getElementById('start-button');
 const dialogue = document.querySelector('.dialogue');
 const features = document.querySelector('.features');
@@ -178,6 +178,7 @@ function playVideo(){
 }
 
 function goodbye(){
+    const main = document.getElementById('main');
     main.style.opacity = '0';
     main.style.transition = '3s';
     setTimeout(()=>{

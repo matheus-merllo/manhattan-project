@@ -221,7 +221,7 @@ body{
     transition: 2s;
 }
 
-#img-kim{
+#img-kitsuragi{
     position: absolute;
     width: 150px;
     left: -150px;
@@ -264,7 +264,7 @@ body{
     background: #302e2e;
 }
 
-.dialogue-kim{
+.dialogue-kitsuragi{
     display: none;
 }
 

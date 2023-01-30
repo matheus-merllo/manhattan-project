@@ -117,10 +117,10 @@ function checkValues(radiation, energy, speed, range){
     if (radiation.textContent < 6){
         textOne.textContent =  textOne.textContent + ("Essa quantidade de radiação não será um problema, desaparecerá em algumas semanas. ");
         code = code + '1';
-    } else if (radiation.textContent > 6 && radiation.textContent < 30){
+    } else if (radiation.textContent > 6 && radiation.textContent <= 29){
         textOne.textContent =  textOne.textContent + ("Essa quantidade de radiação será um problema. ")
     } else {
-        textOne.textContent =  textOne.textContent + ("Está ficando louco? Com toda essa radiação, causaria um inverno nuclear.")
+        textOne.textContent =  textOne.textContent + ("Está ficando louco? Com toda essa radiação, teriamos um inverno nuclear.")
     }
 
     if(energy.textContent >= 4 && energy.textContent <= 6){

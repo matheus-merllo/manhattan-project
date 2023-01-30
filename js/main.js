@@ -162,7 +162,7 @@ function final(){
     })
     launcherButton.addEventListener('click', () => {
         const launchAudio = document.getElementById('launch-audio');
-        launchAudio.volume = '0.3';
+        launchAudio.volume = '0.05';
         launchAudio.play();
         goodbye();
         setTimeout(playVideo, 5000);
@@ -182,6 +182,27 @@ function goodbye(){
     main.style.opacity = '0';
     main.style.transition = '3s';
     setTimeout(()=>{
-        window.location.reload(true);
+        playAgain();
     }, 8500);
+}
+
+function playAgain(){
+    const main = document.getElementById('main');
+    main.style.opacity = '1';
+    main.style.transition = '1s';
+
+    text.forEach((txt) => {
+        txt.innerHTML = '';
+    })
+    textOne.innerHTML = 'A missão foi um sucesso!';
+    textTwo.innerHTML = 'Em poucas semanas, nossas tropas recuperarão o território invadido. Esperamos, para o bem de todos, que não seja necessário o uso de outra dessas bombas.';
+
+    launcherButton.style.display = 'none';
+    startButton.style.display = 'block';
+    startButton.innerHTML = 'Jogar novamente';
+
+    startButton.addEventListener('click', () => {
+        window.location.reload(true);
+    })
+
 }

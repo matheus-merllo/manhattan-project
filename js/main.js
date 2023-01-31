@@ -126,7 +126,7 @@ function checkValues(radiation, energy, speed, range){
     if(energy.textContent >= 4 && energy.textContent <= 6){
         textOne.textContent =  textOne.textContent + ("Com esssa quantidade de energia passaremos nossa mensagem. ");
         code = code + '1';
-    }else if(energy.textContent < 3){
+    }else if(energy.textContent < 4){
         textOne.textContent =  textOne.textContent + ("Precisamos liberar mais energia na explosão. ");
     } else {
         textOne.textContent =  textOne.textContent + ("A energia liberada será muito alta, perderemos muito território. ");
